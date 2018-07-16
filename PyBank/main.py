@@ -106,9 +106,9 @@ output = (
 
 #print(output)
 
-with open(analysis, "w") as txt_file:
+with open(analysis, "w") as PyBank:
 
-    txt_file.write(output)
+    PyBank.write(output)
 
  
 

@@ -43,7 +43,7 @@ for key in Candidates.keys():
 #print script
 print("Election Results")
 print("------------------------------------------")
-print("Total:" + str(votes_cast))
+print("Total Votes:" + str(votes_cast))
 print("------------------------------------------")
 print(key + ":" + str(Candidates_percent[key]) + "%(" + str(value) +")")
 print("-------------------------------------------")
@@ -56,7 +56,7 @@ PyPoll = open("poll_results.txt","w")
 #Writing PyPoll Text File
 PyPoll.write("Election Results \n")
 PyPoll.write("------------------------\n")
-PyPoll.write("Total:" + str(votes_cast) + "\n")
+PyPoll.write("Total Votes:" + str(votes_cast) + "\n")
 PyPoll.write("-------------------------\n")
 for key, value in Candidates.items():
     PyPoll.write(key + ":" + str(Candidates_percent[key]) +"%(" + str(value)+ ")\n")
